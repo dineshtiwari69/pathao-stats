@@ -28,7 +28,7 @@ export default function Home() {
       {token.access_token != null ? <Dashboard /> : <Login />}
       <div className="flex justify-center items-center ">
         <img src="/assets/github-mark.png" alt="github" className="h-6 w-6 " />
-        <a href="https://github.com/hasib32/pathao-clone" className="ml-2 ">
+        <a href="https://github.com/dineshtiwari69/pathao-stats" className="ml-2 ">
           Codebase Available on Github
         </a>
       </div>
