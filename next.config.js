@@ -10,6 +10,10 @@ const nextConfig = {
         source: "/pathao/:path*",
         destination: "https://api.pathao.com/v1/me/:path*",
       },
+      {
+        source: "/pathaov2/:path*",
+        destination: "https://api.pathao.com/v2/:path*",
+      },
     ];
   },
 };

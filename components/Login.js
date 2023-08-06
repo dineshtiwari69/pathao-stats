@@ -15,11 +15,11 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     const toastID = toast.loading("Signing IN...");
-    const resp = await fetch("https://api.pathao.com/v2/auth/register", {
+    const resp = await fetch("/pathaov2/auth/register", {
       method: "POST",
       headers: {
         Host: "api.pathao.com",
-        "App-Agent": "ride/android/414",
+        "App-Agent": "ride/android/423",
         "Android-Os": "7.1.2",
         "Content-Type": "application/json; charset=UTF-8",
         "Content-Length": "70",
@@ -49,11 +49,11 @@ export default function Login() {
   async function handleOtpSent(e) {
     e.preventDefault();
     const toastID = toast.loading("Verifying OTP...");
-    const resp = await fetch("https://api.pathao.com/v2/auth/verify", {
+    const resp = await fetch("/pathaov2/auth/verify", {
       method: "POST",
       headers: {
         Host: "api.pathao.com",
-        "App-Agent": "ride/android/414",
+        "App-Agent": "ride/android/423",
         "Android-Os": "7.1.2",
         "Content-Type": "application/json; charset=UTF-8",
         "Content-Length": "161",

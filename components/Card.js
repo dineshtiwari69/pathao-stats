@@ -15,7 +15,7 @@ export default function Card({ type, token }) {
 
       fetch(url, {
         headers: {
-          "App-Agent": "ride/android/414",
+          "App-Agent": "ride/android/423",
           "Android-Os": "7.1.2",
           Authorization: `Bearer ${token}`,
           "City-Id": "1",
